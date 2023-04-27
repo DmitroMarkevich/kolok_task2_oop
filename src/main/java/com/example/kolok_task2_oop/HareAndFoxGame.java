@@ -28,7 +28,7 @@ public class HareAndFoxGame extends Application {
         Rectangle forest = new Rectangle(340, 50, 30, 30);
         forest.setFill(Color.GREEN);
 
-        Rectangle hare = new Rectangle(50, 50, 30, 30);
+        Rectangle hare = new Rectangle(50, 50, 20, 20);
         hare.setFill(Color.BLUE);
 
         Rectangle fox = new Rectangle(500, 300, 30, 30);
