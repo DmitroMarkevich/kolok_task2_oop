@@ -25,7 +25,7 @@ public class HareAndFoxGame extends Application {
     public void start(Stage primaryStage) {
         Pane root = new Pane();
 
-        Rectangle forest = new Rectangle(340, 50, 30, 30);
+        Rectangle forest = new Rectangle(340, 100, 30, 50);
         forest.setFill(Color.GREEN);
 
         Rectangle hare = new Rectangle(50, 50, 20, 20);
@@ -38,13 +38,8 @@ public class HareAndFoxGame extends Application {
         primaryStage.setScene(new Scene(root, 600, 400));
         primaryStage.show();
 
-        primaryStage.getScene().setOnKeyPressed(event -> {
-            pressedKeys.add(event.getCode());
-        });
-
-        primaryStage.getScene().setOnKeyReleased(event -> {
-            pressedKeys.remove(event.getCode());
-        });
+        primaryStage.getScene().setOnKeyPressed(event -> pressedKeys.add(event.getCode()));
+        primaryStage.getScene().setOnKeyReleased(event -> pressedKeys.remove(event.getCode()));
 
         new Thread(() -> {
             while (true) {
