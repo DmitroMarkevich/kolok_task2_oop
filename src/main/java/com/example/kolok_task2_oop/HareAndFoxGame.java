@@ -12,9 +12,9 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class HareAndFoxGame extends Application {
-    private final double foxSpeed = 2.0;
+    private final double foxSpeed = 6.5;
     private final Set<KeyCode> pressedKeys = new HashSet<>();
-    private double hareSpeed = 3.0;
+    private double hareSpeed = 5.0;
     private int hareStep = 0;
 
     public static void main(String[] args) {
